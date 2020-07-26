@@ -1,5 +1,4 @@
 #获得所有c++代码为答案的M2
-
 import json
 
 f = open('averageDepth.json', encoding='utf-8')
