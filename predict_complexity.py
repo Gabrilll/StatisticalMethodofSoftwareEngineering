@@ -1,13 +1,13 @@
 import matplotlib.pyplot as plt
 import json
 
-f=open('matrix.json')
+f = open('matrix.json')
 data = json.loads(f.read())
 
 m1 = []
-m2=[]
-m3=[]
-m4=[]
+m2 = []
+m3 = []
+m4 = []
 m5 = []
 for case in data:
     m1.append(data[case]['M1'])
@@ -39,7 +39,7 @@ for case in data:
 
     x.append(t1 + t2 + t3 + t4 + t5)
     y.append(data[case]['difficulty_index'])
-    res[case]={}
+    res[case] = {}
     res[case]['predict_complexity'] = t1 + t2 + t3 + t4 + t5
 
 plt.scatter(x, y, c='green', s=2)
