@@ -27,7 +27,7 @@ def index_lst(lst, component=0, rate=0):
                 return i
         return 0
 def loadFiles():
-    csvFile = open("matrix.csv", "r")
+    csvFile = open("../matrix/matrix.csv", "r")
     reader = csv.reader(csvFile)
     matrix = []
     for item in reader:
@@ -102,7 +102,7 @@ def main():
     for i in range(len(T1)):
         max_dict[case[i]] = T1[i].tolist()
     print(max_dict)
-    with open("E:/s/大二下/数据科学基础/大作业 代码推荐/pca/pca.json","w") as f:
+    with open("pca.json","w") as f:
         json.dump(max_dict,f)
     plotBestFit(T1)
     
