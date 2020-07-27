@@ -22,15 +22,14 @@ case.sort()
 count=[]
 for item in case:
     list1=[]
+    curCase = {}
     for i in range(len(sample)):
         for item1 in data[sample[i]]['cases']:
             if(item1['case_id']==item):
                 list1.append(item1['final_score'])
                 count.append(len(item1['upload_records']))
-while(len(list1)!=0):
-    for item in case:
-        cur=0
-        list1=[]
+    while(len(list1)!=0):
+        cur = 0
         for i in range(len(sample)):
             for item1 in data[sample[i]]['cases']:
                 if(item1['case_id']==item):
@@ -39,7 +38,7 @@ while(len(list1)!=0):
                         count[cur]-=1
                     cur+=1
         list1.sort()
-        plt.hist(list1,group,color='#97DFF7',alpha=0.35,histtype='bar')
+        plt.hist(list1,group,color='#6FBD67',alpha=0.2,histtype='bar')
     plt.legend()
     plt.xlabel('score')
     plt.ylabel('Number of people')    
