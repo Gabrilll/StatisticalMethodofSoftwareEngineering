@@ -1,7 +1,7 @@
 #获得所有c++代码为答案的M2
 import json
 
-f = open('../../../averageDepth.json', encoding='utf-8')
+f = open('averageDepthApproach/averageDepth.json', encoding='utf-8')
 res = f.read()
 data = json.loads(res)
 
@@ -26,6 +26,6 @@ for i in range(0,pos):
             lis.append(dic)
 print(lis)
 
-with open('../../../averageDepthOfC.json', "w") as f:
+with open('averageDepthApproach/averageDepthOfC.json', "w") as f:
     json.dump(lis,f)
     print("finished")
