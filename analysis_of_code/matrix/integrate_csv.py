@@ -1,7 +1,7 @@
 import csv
 import json
 
-f = open('matrix.csv','w', newline='')
+f = open('matrix.csv', 'w', newline='')
 writer = csv.writer(f)
 f_j = open('matrix.json')
 data = json.loads(f_j.read())

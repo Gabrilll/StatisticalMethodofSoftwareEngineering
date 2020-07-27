@@ -3,7 +3,7 @@
 import json
 import zipfile
 
-f = open('test_data.json', encoding='utf-8')
+f = open('../../../test_data.json', encoding='utf-8')
 res = f.read()
 data = json.loads(res)
 questionID = []
@@ -17,7 +17,7 @@ for key in data:
             pos += 1
 print(pos)
 
-z = zipfile.ZipFile('answers.zip')
+z = zipfile.ZipFile('../../../data_collection/answers.zip')
 countC=0
 for i in range(0, pos):
     path="answers/"+questionID[i]+".py"
@@ -39,6 +39,6 @@ for i in range(0,countC):
     lis.append(dic)
 
 print(lis)
-with open("cAnswer.json", "w") as f:
+with open("../../../cAnswer.json", "w") as f:
      json.dump(lis, f)
      print("加载文件完成")

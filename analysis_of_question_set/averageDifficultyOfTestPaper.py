@@ -3,7 +3,7 @@
 import json
 import random
 
-f = open('test_data.json', encoding='utf-8')
+f = open('../test_data.json', encoding='utf-8')
 res = f.read()
 data = json.loads(res)
 questionID = []
@@ -20,7 +20,7 @@ count=100
 lis=random.sample(questionID,count)
 print(lis)
 
-f1 = open('qRealDiscrim.json', encoding='utf-8')
+f1 = open('../qRealDiscrim.json', encoding='utf-8')
 res1 = f1.read()
 data1 = json.loads(res1)
 

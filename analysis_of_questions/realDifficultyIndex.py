@@ -3,7 +3,7 @@
 import json
 import math
 
-f = open('test_data.json', encoding='utf-8')
+f = open('../test_data.json', encoding='utf-8')
 res = f.read()
 data = json.loads(res)
 questionID = []
@@ -44,6 +44,6 @@ for i in range(0, pos):
     s = str(questionID[i])
     dic[s] = dic1
 
-with open("realDifficultyIndex.json","w") as f:
+with open("realDifficultyIndex.json", "w") as f:
     json.dump(dic,f)
     print("finished")

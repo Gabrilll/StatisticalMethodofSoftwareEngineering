@@ -3,7 +3,7 @@ import json
 import seaborn as sns
 
 
-f = open('test_data.json', encoding='utf-8')
+f = open('../test_data.json', encoding='utf-8')
 res = f.read()
 data = json.loads(res)
 score_dis = {}

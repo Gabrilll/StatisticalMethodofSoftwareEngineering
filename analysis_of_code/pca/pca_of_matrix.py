@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.decomposition import PCA
 
-pd_data = pd.read_csv('matrix.csv')
+pd_data = pd.read_csv('../matrix/matrix.csv')
 temp = pd_data
 pd_data = pd_data.iloc[:, 1:6]
 pca = PCA(n_components='mle')

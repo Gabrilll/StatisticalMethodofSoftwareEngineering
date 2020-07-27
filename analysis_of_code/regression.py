@@ -8,7 +8,7 @@ from sklearn import linear_model
 mpl.rcParams['font.sans-serif'] = ['SimHei']
 mpl.rcParams['axes.unicode_minus'] = False
 
-pd_data = pd.read_csv('matrix.csv')
+pd_data = pd.read_csv('matrix/matrix.csv')
 pd_data = pd_data.iloc[:, 1:]
 print(pd_data.describe())
 print(pd_data[pd_data.isnull() == True].count())
