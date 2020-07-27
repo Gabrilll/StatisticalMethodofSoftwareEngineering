@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import json
 
-f = open('matrix.json')
+f = open('matrix/matrix.json')
 data = json.loads(f.read())
 
 m1 = []

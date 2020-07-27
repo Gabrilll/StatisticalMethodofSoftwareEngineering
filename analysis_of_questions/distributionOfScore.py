@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 sample=[]
 case=[]
 group=[0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100]
-with open('test_data.json','rb') as f:
+with open('../test_data.json', 'rb') as f:
     data = json.load(f)
     for item in data:
         sample.append(item)

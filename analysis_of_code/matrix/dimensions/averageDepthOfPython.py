@@ -4,10 +4,10 @@ import json
 import os
 import zipfile
 
-f = open('averageDepth.json', encoding='utf-8')
+f = open('../../../averageDepth.json', encoding='utf-8')
 res = f.read()
 data = json.loads(res)
-f1 = open("cAnswer.json", encoding="utf-8")
+f1 = open("../../../cAnswer.json", encoding="utf-8")
 res1 = f1.read()
 data1 = json.loads(res1)
 
@@ -25,7 +25,7 @@ for key in data:
 
 
 #path = "C:\\Users\\asus\\Desktop\\nestedBlock1"
-z = zipfile.ZipFile('answers.zip')
+z = zipfile.ZipFile('../../../data_collection/answers.zip')
 for i in range(0, pos):
     #print(pythonQuestion[i])
     # filename = str(pythonQuestion[i]) + ".py"
@@ -65,6 +65,6 @@ for i in range(0,pos):
     lis.append(dic)
 
 print(len(lis))
-with open("averageDepthOfPython.json","w") as f:
+with open("../../../averageDepthOfPython.json", "w") as f:
     json.dump(lis,f)
     print("finished")

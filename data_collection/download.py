@@ -2,7 +2,7 @@ import json
 import urllib.request, urllib.parse
 import os
 
-f = open('test_data.json', encoding='utf-8')
+f = open('../test_data.json', encoding='utf-8')
 res = f.read()
 data = json.loads(res)
 print(data)

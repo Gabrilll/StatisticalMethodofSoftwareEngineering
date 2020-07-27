@@ -4,7 +4,7 @@ Created on Sat Jul 25 20:50:25 2020
 
 @author: Ray
 """
-path='C:/Users/Ray/Desktop/test_data.json'
+path= '../test_data.json'
 import numpy as np
 import matplotlib.pyplot as plt
 import json
@@ -13,7 +13,7 @@ from random import sample
 import json
 import random
 
-f = open("test_data.json", encoding='utf-8')
+f = open("../test_data.json", encoding='utf-8')
 res = f.read()
 data = json.loads(res)
 questionID = []
@@ -32,7 +32,7 @@ count=100
 lis=random.sample(questionID,count)
 
 
-f1 = open('qRealDiscrim.json', encoding='utf-8')
+f1 = open('../qRealDiscrim.json', encoding='utf-8')
 res1 = f1.read()
 data1 = json.loads(res1)
 

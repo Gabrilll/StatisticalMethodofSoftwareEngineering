@@ -1,10 +1,10 @@
 from scipy.stats import pearsonr
 import json
 
-f = open('complexity.json', encoding='utf-8')
+f = open('../complexity.json', encoding='utf-8')
 res = f.read()
 data = json.loads(res)
-f2 = open('matrix.json', encoding='utf_8')
+f2 = open('../matrix/matrix.json', encoding='utf_8')
 res2 = f2.read()
 data2 = json.loads(res2)
 x = []

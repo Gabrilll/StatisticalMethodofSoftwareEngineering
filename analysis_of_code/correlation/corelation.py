@@ -12,7 +12,7 @@ m3=[]
 m4=[]
 m5=[]
 
-f = open('m1m5.json', encoding='utf-8')
+f = open('../matrix/dimensions/m1m5.json', encoding='utf-8')
 res = f.read()
 data = json.loads(res)
 
@@ -24,7 +24,7 @@ for key in data:
         pos+=1
 
 
-f1 = open('M2.json', encoding='utf-8')
+f1 = open('../matrix/dimensions/m2.json', encoding='utf-8')
 res1 = f1.read()
 data1 = json.loads(res1)
 for i in range(0,pos):
@@ -33,7 +33,7 @@ for i in range(0,pos):
             m2.append(data1[key]["Average Block Depth"])
             break
 
-f3= open('m3m4.json', encoding='utf-8')
+f3= open('../../m3m4.json', encoding='utf-8')
 res3 = f3.read()
 data3 = json.loads(res3)
 
@@ -44,7 +44,7 @@ for i in range(0,pos):
             m4.append(data3[key]['M4'])
             break
 
-f4= open('realDifficultyIndex.json', encoding='utf-8')
+f4= open('../../analysis_of_questions/realDifficultyIndex.json', encoding='utf-8')
 res4 = f4.read()
 data4 = json.loads(res4)
 

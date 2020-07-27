@@ -1,9 +1,9 @@
 import json
 
-f1 = open('m1m5.json')
-f2 = open('m2.json')
-f3 = open('operator.json')
-f_diff = open('realDifficultyIndex.json')
+f1 = open('dimensions/m1m5.json')
+f2 = open('dimensions/m2.json')
+f3 = open('dimensions/operator.json')
+f_diff = open('../../analysis_of_questions/realDifficultyIndex.json')
 m1m5 = json.loads(f1.read())
 m2 = json.loads(f2.read())
 m3m4 = json.loads(f3.read())

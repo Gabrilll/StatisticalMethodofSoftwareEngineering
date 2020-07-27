@@ -4,7 +4,7 @@ import json
 import math
 import numpy as np
 
-f = open('test_data.json', encoding='utf-8')
+f = open('../test_data.json', encoding='utf-8')
 res = f.read()
 data = json.loads(res)
 
@@ -64,6 +64,6 @@ print(qRealDiff)
 print(qRealDiscrim)
 print(dic)
 
-with open("qRealDiscrim.json", "w") as f:
+with open("../qRealDiscrim.json", "w") as f:
     json.dump(dic, f)
     print("加载文件完成")

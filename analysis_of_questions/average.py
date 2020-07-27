@@ -1,6 +1,6 @@
 import json
 
-f = open('test_data.json', encoding='utf-8')
+f = open('../test_data.json', encoding='utf-8')
 res = f.read()
 data = json.loads(res)
 exc = {}

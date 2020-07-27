@@ -7,10 +7,10 @@ two_char_op = ["==", "!=", "<=", ">=", "<<", ">>", "**", "//", ":="]
 three_char_op = []
 char_op = ['and', 'or', 'not', 'in', 'is', "del"]
 
-j = open('test_data.json', encoding='utf-8')
+j = open('../../../test_data.json', encoding='utf-8')
 res = j.read()
 data = json.loads(res)
-z = zipfile.ZipFile('answers.zip')
+z = zipfile.ZipFile('../../../data_collection/answers.zip')
 cases = z.namelist()
 print(cases)
 
