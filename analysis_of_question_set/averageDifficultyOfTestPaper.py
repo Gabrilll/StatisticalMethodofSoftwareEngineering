@@ -2,8 +2,11 @@
 
 import json
 import random
+import os
 
-f = open('../test_data.json', encoding='utf-8')
+module_path = os.path.dirname(__file__)
+
+f = open(module_path+'/../test_data.json', encoding='utf-8')
 res = f.read()
 data = json.loads(res)
 questionID = []
@@ -20,7 +23,7 @@ count=100
 lis=random.sample(questionID,count)
 print(lis)
 
-f1 = open('../qRealDiscrim.json', encoding='utf-8')
+f1 = open(module_path+'/../qRealDiscrim.json', encoding='utf-8')
 res1 = f1.read()
 data1 = json.loads(res1)
 
@@ -38,3 +41,5 @@ averageDiscrim=discrim/count
 print(averageDifficulty)
 print(averageDiscrim)
 
+def values():
+    return averageDifficulty,averageDiscrim

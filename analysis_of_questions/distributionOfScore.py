@@ -44,5 +44,5 @@ for item in case:
     plt.xlabel('score')
     plt.ylabel('Number of people')    
     plt.title(item)
-    plt.savefig('scoresDigram/'+item+'.png')
+    plt.savefig('scoresDigram/'+item+'.png',transparent=True)
     plt.clf()
