@@ -5,11 +5,11 @@ from analysis_of_questions import plot_score_distribution
 GEN_HTML = 'question.html'
 
 f = open(GEN_HTML, 'w')
-f_a = open('analysis_of_questions/average.json')
-f_d = open('analysis_of_questions/realDifficultyIndex.json')
-f_v = open('analysis_of_questions/qRealDiscrim.json')
-f_c = open('analysis_of_code/complexity.json')
-f_m=open('analysis_of_code/matrix/matrix.json')
+f_a = open('../analysis_of_questions/average.json')
+f_d = open('../analysis_of_questions/realDifficultyIndex.json')
+f_v = open('../analysis_of_questions/qRealDiscrim.json')
+f_c = open('../analysis_of_code/complexity.json')
+f_m=open('../analysis_of_code/matrix/matrix.json')
 res_a = f_a.read()
 res_d = f_d.read()
 res_v = f_v.read()

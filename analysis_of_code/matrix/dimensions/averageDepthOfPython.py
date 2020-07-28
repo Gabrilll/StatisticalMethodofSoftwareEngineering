@@ -7,7 +7,7 @@ import zipfile
 f = open('averageDepthApproach/averageDepth.json', encoding='utf-8')
 res = f.read()
 data = json.loads(res)
-f1 = open("../../../cAnswer.json", encoding="utf-8")
+f1 = open("cAnswer.json", encoding="utf-8")
 res1 = f1.read()
 data1 = json.loads(res1)
 

@@ -39,6 +39,6 @@ for i in range(0,countC):
     lis.append(dic)
 
 print(lis)
-with open("../../../cAnswer.json", "w") as f:
+with open("cAnswer.json", "w") as f:
      json.dump(lis, f)
      print("加载文件完成")

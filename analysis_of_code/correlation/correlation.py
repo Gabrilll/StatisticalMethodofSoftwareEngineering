@@ -33,7 +33,7 @@ for i in range(0,pos):
             m2.append(data1[key]["Average Block Depth"])
             break
 
-f3= open('../../m3m4.json', encoding='utf-8')
+f3= open('../matrix/dimensions/m3m4.json', encoding='utf-8')
 res3 = f3.read()
 data3 = json.loads(res3)
 
