@@ -4,7 +4,7 @@ import json
 import os
 import zipfile
 
-f = open('../../../averageDepth.json', encoding='utf-8')
+f = open('averageDepthApproach/averageDepth.json', encoding='utf-8')
 res = f.read()
 data = json.loads(res)
 f1 = open("../../../cAnswer.json", encoding="utf-8")
@@ -65,6 +65,6 @@ for i in range(0,pos):
     lis.append(dic)
 
 print(len(lis))
-with open("../../../averageDepthOfPython.json", "w") as f:
+with open("averageDepthApproach/averageDepthOfPython.json", "w") as f:
     json.dump(lis,f)
     print("finished")
