@@ -1,3 +1,4 @@
+# 对5个维度进行pca降维（2维）
 import numpy as np
 import json
 from sklearn.decomposition import PCA

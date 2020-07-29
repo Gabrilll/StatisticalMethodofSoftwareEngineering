@@ -1,3 +1,4 @@
+# 绘制5个维度和难度指数的散点图
 import matplotlib.pyplot as plt
 import json
 

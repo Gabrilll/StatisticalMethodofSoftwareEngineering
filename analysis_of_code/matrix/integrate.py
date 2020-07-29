@@ -1,3 +1,4 @@
+# 将5个维度的数据整合成json文件
 import json
 
 f1 = open('dimensions/m1m5.json')

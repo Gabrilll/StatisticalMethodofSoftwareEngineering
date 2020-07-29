@@ -1,3 +1,4 @@
+# 生成一套试题分析的网页报告
 import webbrowser
 from analysis_of_question_set import averageDifficultyOfTestPaper
 from analysis_of_question_set import evaluate_portion_of_classification

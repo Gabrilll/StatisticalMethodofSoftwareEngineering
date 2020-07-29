@@ -1,3 +1,4 @@
+# 计算每道题每次提交的平均分
 import json
 
 f = open('../test_data.json', encoding='utf-8')

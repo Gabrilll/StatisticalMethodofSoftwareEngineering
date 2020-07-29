@@ -1,3 +1,4 @@
+# 统计M3(操作符数量)和M4(不同操作符数量）
 import json
 import zipfile
 
@@ -62,7 +63,7 @@ for case in cases:
     m4 = 0
     test = []
     for code in f:
-        code=str(code,encoding='utf-8')
+        code = str(code, encoding='utf-8')
         code = code.lstrip()
         code = code.replace("\n", "")
         if code.startswith("#"):

@@ -1,3 +1,4 @@
+# 对5个维度进行pca降维（基于mle)
 import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.decomposition import PCA

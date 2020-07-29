@@ -4,7 +4,7 @@ Spyder Editor
 
 This is a temporary script file.
 """
-# 最终得分情况
+# 最终得分情况直方图
 # 颜色深浅表示得到最终得分的总共提交次数，颜色越深表示提交次数越多。
 
 import json

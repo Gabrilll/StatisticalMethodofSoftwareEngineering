@@ -1,10 +1,10 @@
+# 根据答案中的python代码计算M1和M5
 import json
 import zipfile
 import csv
 import time
 import lizard
 
-#根据答案中的python代码计算M1和M5
 path = '../../../test_data.json'
 f = open(path, encoding='utf-8')
 res = f.read()

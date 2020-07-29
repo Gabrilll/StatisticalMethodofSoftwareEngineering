@@ -1,3 +1,4 @@
+# 生成某道试题分析的网页报告
 import webbrowser
 import json
 from analysis_of_questions import plot_score_distribution

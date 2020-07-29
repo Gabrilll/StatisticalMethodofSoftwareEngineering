@@ -4,10 +4,10 @@ Created on Sat Jul 25 20:50:25 2020
 
 @author: Ray
 """
+# 对一套试题的知识点覆盖情况绘制雷达图
 path = '../test_data.json'
 import numpy as np
 import matplotlib.pyplot as plt
-# 计算每一套试卷的平均难度
 import json
 import random
 from io import BytesIO

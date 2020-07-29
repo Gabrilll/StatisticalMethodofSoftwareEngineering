@@ -1,3 +1,4 @@
+# 尝试绘制多种形式的直方图
 import matplotlib.pyplot as plt
 import json
 import seaborn as sns

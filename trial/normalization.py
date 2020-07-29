@@ -1,3 +1,4 @@
+# 尝试对5个维度进行标准化
 import matplotlib.pyplot as plt
 import json
 import numpy as np

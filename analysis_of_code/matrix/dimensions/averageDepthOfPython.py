@@ -1,4 +1,4 @@
-#计算所有以python代码为答案的M2
+# 计算所有以python代码为答案的M2
 
 import json
 import os
@@ -23,48 +23,47 @@ for key in data:
         pythonQuestion.append(key["case_Id"])
         pos += 1
 
-
-#path = "C:\\Users\\asus\\Desktop\\nestedBlock1"
+# path = "C:\\Users\\asus\\Desktop\\nestedBlock1"
 z = zipfile.ZipFile('../../../data_collection/answers.zip')
 for i in range(0, pos):
-    #print(pythonQuestion[i])
+    # print(pythonQuestion[i])
     # filename = str(pythonQuestion[i]) + ".py"
     # path1 = os.path.join(path, filename)
-    path1 = "answers/" +str(pythonQuestion[i] )+ ".py"
+    path1 = "answers/" + str(pythonQuestion[i]) + ".py"
     f = z.open(path1)
-    tempDepth=0
-    count=0
-    tempDepth1=[]
+    tempDepth = 0
+    count = 0
+    tempDepth1 = []
     for line in f:
         line = str(line, encoding='utf-8')
-        line=line.replace('\t','    ')
+        line = line.replace('\t', '    ')
         temp = 0
-        line1=line.strip()
-        if len(line1)==0 or line1.startswith('#'):
+        line1 = line.strip()
+        if len(line1) == 0 or line1.startswith('#'):
             continue
         for i in line:
             if i.isspace():
-                temp+=1
+                temp += 1
             else:
-                count+=1
+                count += 1
                 break
         tempDepth1.append(temp)
-    length=len(tempDepth1)
-    for i in range(0,length-1):
-        if tempDepth1[i]>tempDepth1[i+1]:
-            tempDepth+=tempDepth1[i]
-    if tempDepth1[length-1]!=0:
-        tempDepth+=tempDepth1[length-1]
+    length = len(tempDepth1)
+    for i in range(0, length - 1):
+        if tempDepth1[i] > tempDepth1[i + 1]:
+            tempDepth += tempDepth1[i]
+    if tempDepth1[length - 1] != 0:
+        tempDepth += tempDepth1[length - 1]
 
-    depth1=(tempDepth//4)/count
+    depth1 = (tempDepth // 4) / count
     depth.append(depth1)
 
-lis=[]
-for i in range(0,pos):
-    dic={"case_Id":pythonQuestion[i],"Average Block Depth":depth[i]}
+lis = []
+for i in range(0, pos):
+    dic = {"case_Id": pythonQuestion[i], "Average Block Depth": depth[i]}
     lis.append(dic)
 
 print(len(lis))
 with open("averageDepthApproach/averageDepthOfPython.json", "w") as f:
-    json.dump(lis,f)
+    json.dump(lis, f)
     print("finished")
